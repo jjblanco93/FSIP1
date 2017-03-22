@@ -210,7 +210,7 @@ def astar_search(problem, h=None):
     pass
 
 def Lista_costeh(problem):
-    """Search the cheapest movement from current node to the next node."""
+    """Search the cheapest movement from current node to the next node with heuristic."""
     return graph_search(problem, ListaCosteH(problem)) # SortedListByCost -> fringe
 
 # _____________________________________________________________________________

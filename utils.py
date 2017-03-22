@@ -757,14 +757,13 @@ class ListaCoste(Queue):
     def __init__(self,problem):
         self.A = []
         self.problem = problem
-        self.start = 0
         self.expandido = 0
 
     def append(self, item):
         self.A.append(item)
 
     def __len__(self):
-        return len(self.A) - self.start
+        return len(self.A)
 
     def extend(self, items):
         self.expandido = self.expandido + 1
@@ -779,14 +778,13 @@ class ListaCosteH(Queue):
     def __init__(self, problem):
         self.A = []
         self.problem = problem
-        self.start = 0
         self.expandido = 0
 
     def append(self, item):
         self.A.append(item)
 
     def __len__(self):
-        return len(self.A) - self.start
+        return len(self.A)
 
     def extend(self, items):
         self.expandido = self.expandido + 1
